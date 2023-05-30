@@ -118,5 +118,5 @@ dist
 *.sln
 *.sw?
 
-#Electron-builder output
+#Electron-builder out
 /dist_electron

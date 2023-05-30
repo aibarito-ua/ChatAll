@@ -38,6 +38,14 @@
       placeholder="https://your.proxy.com/v1/chat/completions"
       @update:model-value="setOpenaiApi({ alterUrl: $event })"
     ></v-text-field>
+    <v-list-item-title>Prompt</v-list-item-title>
+    <v-text-field
+      v-model="openaiApi.prompt"
+      
+      
+      placeholder="prompt"
+      @update:model-value="setOpenaiApi({ prompt: $event })"
+    ></v-text-field>
   </v-list-item>
 </template>
 

@@ -26,6 +26,7 @@ export default class OpenAIAPIBot extends Bot {
 
   async _sendPrompt(prompt, onUpdateResponse, callbackParam) {
     // Send the prompt to the OpenAI API
+    prompt = store.state.openaiApi.prompt + "\n" + prompt;
     try {
       const headers = {
         "Content-Type": "application/json",

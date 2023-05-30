@@ -91,7 +91,6 @@ export default class ChatGPTBot extends Bot {
   async _sendPrompt(prompt, onUpdateResponse, callbackParam) {
     // Make sure the access token is available
     if (!this.accessToken) await this.checkAvailability();
-
     // Send the prompt to the ChatGPT API
     const headers = {
       "Content-Type": "application/json",

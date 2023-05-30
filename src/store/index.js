@@ -34,8 +34,10 @@ export default createStore({
       apiKey: "",
       temperature: 1,
       alterUrl: "",
+      prompt: "",
     },
     chatgpt: {
+      prompt: "",
       refreshCycle: 0,
     },
     gradio: {
